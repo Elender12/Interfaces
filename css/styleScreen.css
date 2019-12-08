@@ -1,0 +1,408 @@
+
+@media (max-width: 768px) {
+  #container {
+    width:760px;
+    float:right;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    width:520px;
+    float:right;
+  }
+  .galeria{
+    width: 520px;
+    flex: none;
+    /* float: right; */
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    width:400px;
+    float:right;
+  }
+  aside{
+    flex-wrap: nowrap;
+  }
+  .galeria{
+    width:400px;
+    flex-wrap: nowrap;
+    float: right;
+  }
+}
+
+
+/*estilo general del texto para toda la página*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,100);
+
+/*Elementos generales*/
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  font-size: large;
+}
+html, body{
+  /* content: auto 0; */
+  height: 100%;
+  margin: 0;
+  background-color: #d3d3d3;
+} 
+
+/*Elemento que envuelve todo el contenido*/
+#container{
+  max-width: 1200px;
+  /* width: 90%; */
+  float: right;
+  /* background-color: black; */
+  
+}
+/*Elementos del header*/
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90%;
+  z-index: 1000;
+}
+nav {
+    height: 220px;
+}
+nav ul li{
+    float: right;
+    list-style-type: none;
+    padding: 10px;
+   
+}
+nav ul li a{
+background-color: #ECCCD1;
+padding: 10px;
+border-radius: 5px;;
+ color: whitesmoke;
+ font-weight: bold;
+ text-decoration: none;
+ font-family: 'Roboto', sans-serif;
+}
+nav ul li a:hover{
+background-color: #181212;
+}
+
+#menu_1 {
+    float: right;
+    width: 590px;
+    height: 45px;
+    margin-top: 0px;
+}
+/*******************************************/
+
+/*Menú de navegación del ASIDE*/
+aside{
+  background: grey;
+  opacity: 0.5;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  width:65px;
+  transition: all 1s;
+}
+
+aside:hover{
+  width: 10%;
+}
+#menuNav a {
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border-radius: 0 5px 5px 0;
+  }
+#menuNav a:hover {
+    left: 0;
+  }
+
+/*Opciones del menú de la barra lateral*/
+#about {
+    top: 20px;
+    background-color: #ffe6eb;
+  }
+  
+#article {
+    top: 80px;
+    background-color:#ffcdcd;
+  }
+  
+#projects {
+    top: 140px;
+    background-color: #ffe6eb;
+  }
+  
+#contact {
+    top: 200px;
+    background-color: #ffcdcd;
+    
+  }
+ /* header img {
+    float: right;
+  } */
+/*******************************************/
+ 
+  
+
+/*Contenidos en la parte de SECTION*/
+
+/*las fotos de fondo se quedan fijas cuando se mueve la página*/
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*especifico a cada imagen su altura*/
+.bgimg-1 {
+  background-image: url("../img/corazon.jpg");
+  min-height: 500px;
+}
+
+.bgimg-2 {
+  background-image: url("../img/baby1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/zapatitos.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("../img/bebeDurmiendo.jpg");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("../img/cuna.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Roboto", sans-serif;
+  color: #111;
+  font-weight: bold;;
+}
+
+.franja_blanca{
+    color: #282E34;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+  
+#text{
+    text-align:center;
+}
+
+#bloque2{
+    background-color:transparent;
+    font-size:25px;
+    color: #4b3d3d;
+}
+#bloque3{
+    background-color:transparent;
+    font-size:25px;
+    color: #181212;}
+
+#bloque4{
+   background-color:transparent;
+   font-size:25px;
+   color: #e24c4c;
+}
+#bloque5{
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+.bloque_texto{
+    color:rgb(255, 255, 255);
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: center;
+    font-weight: bold;
+}
+#posicion{
+    position:relative;
+}
+
+
+/***********GALERÍA FOTOGRÁFICA********/
+.galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-left: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	margin: 5px;
+}
+
+.galeria img {
+	width: 150px;
+	height: 100px;
+}
+
+/*Estilos del modal*/
+
+.cuadro {
+	display: none;
+}
+
+.cuadro:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+/*especificaciones de cada imagen*/
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+/*Botón de cerrar la galería*/
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+/**FOOTER*****/
+footer {
+  float:right;
+  width: 1200px; 
+  height: 109px;
+}
+#pie {
+  background: rgb(153, 151, 146);
+  height: 100px;
+  margin: 0 auto;
+  
+}
+
+/*ELementos del footer*/
+.lista2{
+    float: left;
+    margin: 20px 30px;
+    list-style-type: none;
+}
+.lista2 a {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#parte_licencia {
+    float: right;
+    width: 350px;
+    text-align: center;
+}
+
+#parte_licencia p {
+    font-size: 13px;
+    color: black;
+    padding: 5px 15px 60px 0;
+}
+#parte_licencia a {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#logo{
+    background-color:white;
+    top: 0;
+    margin-left: 370px;
+    width: 100px;
+    height: 100px;
+}
+/*******************************************/

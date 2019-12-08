@@ -1,0 +1,17 @@
+/*
+Hoja de estilos para la impresión de la página web.
+
+*/
+header, footer, nav, aside {
+    display: none;
+  }
+
+body{
+    /*color negro y tamaño de la letra*/
+    color: black;
+    font-size: 12pt;
+}
+#contenedor_Galeria{
+    /*no muestro la galería para imprimirla*/
+    display: none;
+}

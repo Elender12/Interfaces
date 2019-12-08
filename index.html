@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <!-- hoja de estilo para la impresión -->
+    <link rel="stylesheet" type="text/css" href="./css/stylePrint.css" media="print">
+    <!-- hola de estilo para la pantalla -->
+    <link rel="stylesheet" type="text/css" href="./css/styleScreen.css"  media="screen">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Elementos necesarios para el boton de compartir de Facebook -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+        <!-- --------------------------------------- -->
+        
+        <!-- CABECERA -->
+        <header>
+            <nav>
+                <ul id="menu_1">
+                    <li><a href="#">Sueños</a></li>
+                    <li><a href="#">Viajes</a></li>
+                    <li><a href="#">Filosofía</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+        <section>
+
+            <!-- FOTO PRINCIPAL: INICIO -->
+            <div class="bgimg-1">
+                <div class="caption">
+                    <span class="border">BEBÉ BLOG</span>
+                </div>
+            </div>
+            <!-- Franja blanca -->
+            <article>
+                <div class="franja_blanca">
+                    <h3 id="text">¿Es la vida un arte?</h3>
+                    <p>« ¿Por qué no podemos permanecer encerrados en nosotros mismos?
+                        ¿Por qué buscamos la expresión y la forma intentando vaciarnos de todo
+                        contenido, aspirando a organizar un proceso caótico y rebelde? ¿No sería
+                        más fecundo abandonarnos a nuestra fluidez interior, sin ningún afán de
+                        objetivación, limitándonos a gozar de todas nuestras agitaciones íntimas?
+                        Experiencias múltiples y diferenciadas se fusionarían así para engendrar
+                        una efervescencia extraordinariamente fecunda, semejante a un seísmo o a
+                        un paroxismo musical. Hallarse repleto de uno mismo, no en el sentido del
+                        orgullo sino de la riqueza interior, estar obsesionado por una infinitud
+                        íntima y una tensión extrema: en eso consiste vivir intensamente, hasta
+                        sentirse morir de vivir. Tan raro es ese sentimiento, y tan extraño, que
+                        deberíamos vivirlo gritando. Yo siento que debería morir de vivir y me
+                        pregunto si tiene sentido buscarle una explicación a este sentimiento». <em>Emil Cioran</em>
+                    </p>
+                </div>
+            </article>
+
+            <!-- BLOQUE 2 -->
+            <article>
+                <div class="bgimg-2">
+                    <div class="caption">
+                        <span class="border" id="bloque2">APARECES</span>
+                    </div>
+                </div>
+                <!-- Bloque texto -->
+                <div id="posicion">
+                    <div class="bloque_texto">
+                        <p> « La vida es un instinto de desarrollo, de supervivencia, de acumulación de fuerzas, de
+                            poder ». </p>
+                        <p><em>Friedrich Nietzsche</em></p>
+
+                    </div>
+                </div>
+            </article>
+            <!-- --------------------------------------------- -->
+
+            <!-- BLOQUE 3 -->
+            <article>
+                <div class="bgimg-3">
+                    <div class="caption">
+                        <span class="border" id="bloque3">EXPERIMENTAS LA VIDA</span>
+                    </div>
+                </div>
+                <!-- Bloque texto -->
+                <div id="posicion">
+                    <div class="bloque_texto">
+                        <p>« Vemos las cosas, no como son, sino como somos nosotros ».</p>
+                        <p><em> Inmanuel Kant</em></p>
+                    </div>
+                </div>
+            </article>
+            <!-- --------------------------------------------- -->
+
+            <!-- BLOQUE 4 -->
+            <article>
+                <div class="bgimg-4">
+                    <div class="caption">
+                        <span class="border" id="bloque4">EXISTES</span>
+                    </div>
+                </div>
+                <div id="posicion">
+                    <!-- Bloque texto -->
+                    <div class="bloque_texto">
+                        <p>« Nadie es tan valiente que no sea perturbado por algo inesperado ». </p>
+                        <p><em>Julio César</em></p>
+
+                    </div>
+                </div>
+            </article>
+            <!-- --------------------------------------------- -->
+
+            <!-- BLOQUE 5------------------------------------ -->
+            <article>
+                <div class="bgimg-5">
+                    <div class="caption">
+                        <span class="border" id="bloque5">COMIENZAS UN NUEVO CICLO</span>
+                    </div>
+                </div>
+                <!-- Bloque texto -->
+                <div id="posicion">
+                    <div class="bloque_texto">
+                        <p> « La muerte es una vieja historia y, sin embargo, siempre resulta nueva para alguien ».</p>
+                        <p><em>Iván Turgueniev</em></p>
+                    </div>
+
+                </div>
+            </article>
+            <!-- --------------------------------------------- -->
+            <!-- FOTO PRINCIPAL: FINAL -->
+            <div class="bgimg-1">
+                <div class="caption">
+                    <span class="border">BEBÉ BLOG</span>
+                </div>
+            </div>
+            <!-- División que solo muestra el título -->
+            <div class="bloque_texto">
+                <p> GALERÍA FOTOGRÁFICA</p>
+            </div>
+
+        </section>
+        <!-- MENÚ LATERAL -->
+        <aside>
+            <div id="menuNav" class="sidenav">
+                <a href="#" id="about">Sobre mí</a>
+                <a href="#" id="article">Artículos</a>
+                <a href="#" id="projects">Proyectos</a>
+                <a href="#" id="contact">Contactar</a>
+            </div>
+        </aside>
+
+    </div>
+<!-- **********GALERÍA FOTOGRÁFICA****************** -->
+
+    <div id="contenedor_Galeria">
+        <!-- Lista de las imágenes que van a aparecer en la galería -->
+        <ul class="galeria">
+            <li><a href="#img1"><img src="./img/galeria_bebe1.jpg"></a></li>
+            <li><a href="#img2"><img src="./img/galeria_bebe2.jpg"></a></li>
+            <li><a href="#img3"><img src="./img/galeria_bebe3.jpg"></a></li>
+        </ul>
+        <!-- Contenedores para cuando se abre cada imagen -->
+        <div class="cuadro" id="img1">
+            <h3>La vida es un sueño...</h3>
+            <div class="imagen">
+                <a href="#img4">&#60;</a> <!--signo ' < '' -->
+                <a href="#img2"><img src="./img/galeria_bebe1.jpg"></a>
+                <a href="#img2">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+
+        <div class="cuadro" id="img2">
+            <h3>Vine a este mundo sin nada y sin nada me iré.</h3>
+            <div class="imagen">
+                <a href="#img1">&#60;</a> <!--signo ' < '' -->
+                <a href="#img3"><img src="./img/galeria_bebe2.jpg"></a>
+                <a href="#img3">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+
+        <div class="cuadro" id="img3">
+            <h3>Por una existencia infinita...</h3>
+            <div class="imagen">
+                <a href="#img2">&#60;</a> <!--signo ' < ' -->
+                <a href="#img4"><img src="./img/galeria_bebe3.jpg"></a>
+                <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+        </div>
+    </div>
+
+    <!-- ************FOOTER************** -->
+    <footer>
+        <div id="pie">
+            <!-- Envuelvo el contenido del footer en un div -->
+            <div id="menu_del_footer">
+                <ul class="lista2">
+                    <!-- Lista de elementos para poder tener los botones funcionales que apuntas a las redes sociales -->
+                    <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                            data-show-count="false">Tweet</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+                    <li>
+                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"
+                            data-layout="button" data-size="small"><a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share</a></div>
+                    </li>
+
+                    </li>
+                </ul>
+                <img id="logo" src="./img/logo3.png" alt="logo">
+                <div id="parte_licencia">
+                    <p>Contenido creado por <a href="#">Elena</a>.
+                </div>
+
+            </div>
+    </footer>
+
+
+</body>
+
+</html>
